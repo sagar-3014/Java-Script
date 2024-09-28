@@ -1,0 +1,23 @@
+*{
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.si{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    size: 5px;
+    margin:2.5px;
+    padding: 2.5px;
+    columns: 2.5px;
+}
+
+
+
+.calculator {
+    padding: 20px;
+    border-radius: 10px;
+}
+

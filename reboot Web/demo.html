@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Object Example</title>
+    <style>
+        body{
+            background-color: bisque;
+            color: black;
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+        <div id="object-details" class="output">
+    </div>
+
+    <script>
+        class Person {
+            constructor(name, age, dept) {
+                this.name = name;
+                this.age = age;
+                this.dept = dept;
+            }
+
+            displayDetails() {
+                console.log(`${this.name}`);
+                console.log(`${this.age}`);
+                console.log(`${this.dept}`);
+            }
+        }
+        const person1 = new Person("Sagar", 20, "BSC CY");
+        const detailsDiv = document.getElementById("object-details");
+        detailsDiv.innerHTML = `<h3><strong>name:</strong> ${person1.name}</h3>
+            <h3><strong>age:</strong> ${person1.age}</h3>
+            <h3><strong>dept:</strong> ${person1.dept}</h3>`;
+
+        person1.displayDetails();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    var a=document.createElement('h1')
+    a.textContent="Diamonduuu"
+    document.body.append(a)
+        a.style.color="orange"
+    a.addEventListener("mouseover",function(){
+        a.style.color="white"
+        a.style.backgroundColor="black"
+    })
+    a.addEventListener("mouseleave",function(){
+        a.style.color="green"
+        a.style.backgroundColor="white"
+    })
+</script>    
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr=[1,2,3,4,5]
+arr.forEach((num,index)=>{
+    document.write(num,index+'<br>')
+})
+        //arr.push(33)
+        //arr.unshift(0)
+        //b="Diamond"
+        //arr[2]=b
+        //arr.pop()
+        //arr.shift()
+        //document.write(arr)
+    </script>
+</head>
+</html>-->
+
+<!--!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="ss">
+    <button onclick="funn()">Click me!</button>
+    <script>
+        function funn(){
+            var a=document.getElementById('ss').value
+            alert(a)
+        }
+    </script>
+</body>
+</html>-->

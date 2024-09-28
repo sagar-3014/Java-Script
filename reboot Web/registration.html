@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+
+    <body>
+    <h1 class="reg">Registration Form</h1>
+
+    <br><br><br><br>
+    <form class="form">
+        <ul style="list-style-type:none; padding: 0;">
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" name="name" class="input" id="name" placeholder="Enter Your Name">
+            </li>
+            <li>
+                <label for="number">Number:</label>
+                <input type="text" name="number" class="input" id="number" placeholder="Enter Your Number">
+            </li>
+            <li>
+                <label for="age">Age:</label>
+                <input type="text" name="age" class="input" id="age" placeholder="Enter Your Age">
+            </li>
+            <li>
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree">
+                    <option value="" disabled selected>Select your Degree</option>
+                    <option value="bsc">BSC</option>
+                    <option value="bcom">B.Com</option>
+                    <option value="bca">BCA</option>
+                </select>
+            </li>
+            <li>
+                <label for="gender">Choose Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Custom">Custom</option>
+                </select>
+                
+            </li>
+    
+            
+            <li>
+                <label for="username">Your Username:</label>
+                <input type="text" name="username" class="input" id="username" placeholder="Enter Your Username">
+            </li>
+    
+          
+            <li>
+                <label for="password">Enter Your Password:</label>
+                <input type="password" name="password" class="input" id="password" placeholder="Enter Your Password">
+            </li>
+    
+           
+            <li>
+                <label for="date">Date:</label>
+                <input type="date" name="date" class="input" id="date">
+            </li>
+    
+           
+            <li>
+                <input type="submit" value="Send" id="send">
+                <input type="reset" value="Reset" id="reset">
+            </li>
+        </ul>
+    </form>
+    
+
+
+    <!--
+    
+    
+    <p>welcome</p>
+    <h1 id="hii"></h1>
+    <h3 class="sh"></h3>
+    <script>
+        var a="Diamond"
+        //console.log(a)
+        //document.write(a)
+        //document.getElementById('hii').innerHTML=a
+        //document.getElementsByClassName('sh')[0].innerHTML="CSE"
+        if(1>0){
+            let c="CEO"
+            document.write(a)
+        }
+        console.log(c)
+    </script>-->
+
+</body>
+</html>
+
+

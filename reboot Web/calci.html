@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcii</title>
+    <link rel="stylesheet" href="calci.css">    
+
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="num1" placeholder="Enter first number"><br>
+    <input type="text" id="num2" placeholder="Enter second number"><br>
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+        <br><br>
+        <h3>Result: <span id="result"></span></h3>
+</div>
+
+<script>
+    function add(){
+        var n1=parseFloat(document.getElementById("num1").value);
+        var n2=parseFloat(document.getElementById("num2").value);
+        var n3 = n1 + n2;
+        document.getElementById("result").innerHTML= n3;
+    }
+    function sub(){
+        var n4=parseFloat(document.getElementById("num1").value);
+        var n5=parseFloat(document.getElementById("num2").value);
+        var n6 = n4 - n5;
+        document.getElementById("result").innerHTML= n6;
+    }
+    function mul(){
+        var n7=parseFloat(document.getElementById("num1").value);
+        var n8=parseFloat(document.getElementById("num2").value);
+        var n9 = n7 * n8;
+        document.getElementById("result").innerHTML= n9;
+    }
+    function div(){
+        var n10=parseFloat(document.getElementById("num1").value);
+        var n11=parseFloat(document.getElementById("num2").value);
+        var n12= n10 / n11;
+        document.getElementById("result").innerHTML= n12;
+    }
+</script>
+</body>
+</html>
+
+
+

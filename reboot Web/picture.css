@@ -1,0 +1,39 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    gap: 20px; 
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery img{
+    width: 400px;
+    height: 280px;
+    margin: 13px;
+    border: 2px solid #fff; 
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #f7fbf7;
+    color: rgb(0, 0, 0);
+    border-radius: 85px;
+    cursor: pointer;
+}
+
+#pics{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 1, 1, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px; 
+}

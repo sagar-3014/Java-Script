@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Vaanga  Color Change Pannalam</title>
+    <style>
+        body {
+            background-color:black; 
+        }
+        button {
+            margin: 20px;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="bg()"><b><i>Enna Thodu 🙆🏻‍♂️</i></b></button>
+    <script>
+        let colors = ['lightpink','lightgreen','lightcoral','lightgoldenrodyellow','lightblue'];
+        let currentIndex = 0;
+        function bg() {
+            currentIndex = (currentIndex + 1) % colors.length;
+            document.body.style.backgroundColor = colors[currentIndex];
+        }
+    </script>
+</body>
+</html>
